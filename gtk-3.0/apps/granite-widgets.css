@@ -108,7 +108,7 @@
 
 .content-view .help_button * {
     color: @theme_fg_color;
-}   
+}
 
 .content-view .toolbar {
     -GtkWidget-window-dragging: true;
@@ -233,9 +233,10 @@ GraniteWidgetsPopOver .entry {
 .panel {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
+    font-weight: bold;
 }
 
-.shadow {
+.panel-shadow {
     background-image: -gtk-gradient(linear,
                      left top, left bottom,
                      from (rgba(0, 0, 0, 0.3)),
@@ -244,11 +245,16 @@ GraniteWidgetsPopOver .entry {
     background-color: transparent;
 }
 
+.panel-app-button {
+    -GtkMenuItem-horizontal-padding: 6px;
+}
+
 .composited-indicator,
-.wingpanel-app-button, 
+.wingpanel-app-button,
 .wingpanel-indicator-button {
     background-color: transparent;
     color: #fff;
+    padding: 0;
 }
 
 /**********
