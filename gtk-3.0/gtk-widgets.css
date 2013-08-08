@@ -40,7 +40,7 @@
     -GtkRange-trough-under-steppers: 1;
     -GtkScrollbar-activate-slider: 1;
     -GtkScrollbar-min-slider-length: 50;
-    -GtkScrollbar-slider-width: 15;
+    -GtkScrollbar-slider-width: 5;
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkSeparatorMenuItem-horizontal-padding: 0;
@@ -874,7 +874,7 @@ GtkMenuToolButton.menu,
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    padding: 3px 5px 3px 5px;
+    /*padding: 3px 5px 3px 5px;*/
 }
 
 .menubar.menuitem:hover,
@@ -894,7 +894,8 @@ GtkMenuToolButton.menu,
     border-radius: 0;
     border-style: solid;
     border-width: 1px;
-    padding: 3px 2px 3px 2px;
+    /*padding: 3px 2px 3px 2px;*/
+    padding: 4px 0 4px 0;
 }
 
 /* Workaround for lp:949368 */
