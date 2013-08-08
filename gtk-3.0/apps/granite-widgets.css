@@ -2,8 +2,24 @@
  * dynamic notebooks *
  *********************/
 .dynamic-notebook {
-    background-color: shade(@theme_bg_color, 1.05);
-    background-image: none;
+    /*background-color: shade(@theme_bg_color, 1.05);*/
+    /*background-image: none;*/
+    background-image: -gtk-gradient (linear,
+            left top,
+            left bottom,
+            from (shade (@theme_bg_color, 0.76)),
+            color-stop (0.17, shade (@theme_bg_color, 0.83)),
+            to (shade (@theme_bg_color, 0.90)));
+}
+
+.dynamic-notebook GtkLabel,
+.dynamic-notebook GtkImage {
+    color: shade(@theme_bg_color, 0.35);
+}
+
+.dynamic-notebook GtkLabel:insensitive,
+.dynamic-notebook GtkImage:insensitive {
+    color: shade(@theme_bg_color, 0.65);
 }
 
 .dynamic-notebook .notebook {
@@ -12,6 +28,7 @@
 
     border-width: 1px 0 0 0;
     border-radius: 0;
+    border-color: alpha(#000, 0.40);
 }
 
 .dynamic-notebook .notebook tab {
@@ -29,11 +46,22 @@
 }
 
 .dynamic-notebook .notebook tab:active {
-    background-color: shade(@theme_bg_color, 1.12);
+    /*background-color: shade(@theme_bg_color, 1.12);*/
+    background-image: -gtk-gradient (linear,
+            left top,
+            left bottom,
+            from (shade (@theme_bg_color, 1.04)),
+            to (@theme_bg_color));
+
     border-color: shade(@theme_bg_color, 0.7);
-    border-radius: 3px;
+    border-radius: 4px;
     border-width: 1px;
     color: @theme_fg_color;
+}
+
+.dynamic-notebook .notebook tab .entry {
+    border-radius: 2px;
+    padding: 1px 5px;
 }
 
 .dynamic-notebook .button,
@@ -241,7 +269,6 @@ GraniteWidgetsPopOver .entry {
                      left top, left bottom,
                      from (rgba(0, 0, 0, 0.3)),
                      to (transparent));
-
     background-color: transparent;
 }
 
@@ -254,7 +281,7 @@ GraniteWidgetsPopOver .entry {
 .wingpanel-indicator-button {
     background-color: transparent;
     color: #fff;
-    padding: 0;
+    padding: 0 2px;
 }
 
 /**********
