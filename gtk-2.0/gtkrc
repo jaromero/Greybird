@@ -62,7 +62,7 @@ style "default"
 	GtkScrollbar		::min-slider-length			= 50
 	GtkScrollbar		::slider-width				= 9
 	#GtkScrollbar		::activate-slider			= 1
-	GtkScrollbar		::trough-border				= 3
+	GtkScrollbar		::trough-border				= 1
 	GtkScrollbar		::has-backward-stepper 			= 1
 	GtkScrollbar		::has-forward-stepper			= 1 
 
